@@ -181,12 +181,20 @@ public class GameLevel extends javax.swing.JFrame {
                 updateProfileAfterLevel();
             }
             
+            if(currentLevel == 1){
+                FinishDialog finish = new FinishDialog(this, true);
+                finish.setLocationRelativeTo(this); // Center the dialog 
+                finish.setVisible(true); // Show pop-up
+            }
+            else if (currentLevel == 2)
+            {
+                FinishDialog2 finish = new FinishDialog2(this, true);
+                finish.setLocationRelativeTo(this); // Center the dialog 
+                finish.setVisible(true); // Show pop-up
+                
+            }
             
-            FinishDialog finish = new FinishDialog(this, true);
-            finish.setLocationRelativeTo(this); // Center the dialog 
-            finish.setVisible(true); // Show pop-up
-            
-            backgroundMusic.stop();
+            dispose();
         }
         
         
@@ -203,6 +211,14 @@ public class GameLevel extends javax.swing.JFrame {
         UserAuth.updateScore(username, points);
         UserAuth.addcompleteLevels(username, currentLevel);
         
+    }
+    
+    @Override
+    public void dispose() {
+    if (backgroundMusic != null) {
+        backgroundMusic.stop();
+    }
+        super.dispose();
     }
     
     private void startTimer() {
