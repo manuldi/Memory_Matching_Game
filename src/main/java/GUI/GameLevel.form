@@ -44,49 +44,52 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <Group type="103" groupAlignment="1" attributes="0">
-                      <Group type="102" attributes="0">
-                          <EmptySpace min="-2" pref="200" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="card1" max="32767" attributes="0"/>
-                              <Component id="card5" alignment="0" max="32767" attributes="0"/>
-                              <Component id="card13" max="32767" attributes="0"/>
-                              <Component id="card9" max="32767" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="RestartBtn" min="-2" pref="139" max="-2" attributes="0"/>
+                  <EmptySpace pref="55" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="card1" max="32767" attributes="0"/>
+                          <Component id="card5" alignment="0" max="32767" attributes="0"/>
+                          <Component id="card13" max="32767" attributes="0"/>
+                          <Component id="card9" max="32767" attributes="0"/>
+                      </Group>
+                      <Component id="txtLevel" min="-2" pref="127" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="card14" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="card10" min="-2" max="-2" attributes="0"/>
-                                      <Component id="card6" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace max="32767" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="card11" max="32767" attributes="0"/>
-                                      <Component id="card7" max="32767" attributes="0"/>
-                                      <Component id="card15" max="32767" attributes="0"/>
-                                  </Group>
-                              </Group>
+                              <Component id="card14" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="card10" min="-2" max="-2" attributes="0"/>
+                              <Component id="card6" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="card11" max="32767" attributes="0"/>
+                              <Component id="card7" max="32767" attributes="0"/>
+                              <Component id="card15" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="card2" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtMoves" min="-2" pref="127" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
-                                  <Component id="card2" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace pref="50" max="32767" attributes="0"/>
                                   <Component id="card3" min="-2" max="-2" attributes="0"/>
                               </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                                  <Component id="txtMisses" min="-2" pref="111" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
                           </Group>
-                          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="RestartBtn" min="-2" pref="139" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="79" max="-2" attributes="0"/>
-                          <Component id="txtMoves" min="-2" pref="127" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
-                          <Component id="txtMisses" min="-2" pref="111" max="-2" attributes="0"/>
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <Component id="card8" min="-2" max="-2" attributes="0"/>
@@ -133,16 +136,19 @@
               </Group>
               <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                          <Component id="txtMisses" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
-                          <Component id="txtMoves" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="9" pref="9" max="-2" attributes="0"/>
                           <Component id="RestartBtn" min="-2" max="-2" attributes="0"/>
                       </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="txtMisses" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                              <Component id="txtMoves" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtLevel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
                   </Group>
-                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Component id="card4" max="32767" attributes="0"/>
                       <Component id="card3" max="32767" attributes="0"/>
@@ -186,7 +192,6 @@
                                   </Group>
                               </Group>
                               <Group type="102" attributes="0">
-                                  <EmptySpace max="32767" attributes="0"/>
                                   <Component id="txtTimer" min="-2" pref="28" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jLabel1" min="-2" pref="62" max="-2" attributes="0"/>
@@ -865,6 +870,17 @@
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="Time Left:   s"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="txtLevel">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="SansSerif" size="18" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="a" green="4a" red="68" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Level:"/>
           </Properties>
         </Component>
       </SubComponents>

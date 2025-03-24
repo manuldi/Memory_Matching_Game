@@ -172,7 +172,7 @@ public class FinishDialog extends javax.swing.JDialog {
         NoButtonClicked = true; // Mark that Play was clicked
         
         dispose();
-        JOptionPane.showMessageDialog(this, "Next level loading...");
+//        JOptionPane.showMessageDialog(this, "Next level loading...");
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new GameLevel(2).setVisible(true);
