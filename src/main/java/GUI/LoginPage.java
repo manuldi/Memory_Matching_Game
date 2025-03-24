@@ -257,10 +257,10 @@ public class LoginPage extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("SansSerif", 0, 16)); // NOI18N
         jLabel5.setText("Don't have a account? ");
 
-        SignupNavigate.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        SignupNavigate.setFont(new java.awt.Font("SansSerif", 0, 16)); // NOI18N
         SignupNavigate.setText("Sign up");
         SignupNavigate.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         SignupNavigate.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -342,7 +342,7 @@ public class LoginPage extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 579, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 78, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 67, Short.MAX_VALUE)
                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 297, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap())
                     .addGroup(jPanel1Layout.createSequentialGroup()

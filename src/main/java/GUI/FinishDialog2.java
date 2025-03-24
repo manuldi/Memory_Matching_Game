@@ -172,7 +172,7 @@ public class FinishDialog2 extends javax.swing.JDialog {
         //        JOptionPane.showMessageDialog(this, "Next level loading...");
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new GameLevel(3).setVisible(true);
+                new GameLevel2(3).setVisible(true);
             }
         });
 

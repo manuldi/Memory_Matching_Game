@@ -170,7 +170,7 @@ public class GameOver2 extends javax.swing.JDialog {
         //        JOptionPane.showMessageDialog(this, "Next level loading...");
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new GameLevel(GameLevel2.currentLevel).setVisible(true);
+                new GameLevel2(GameLevel2.currentLevel).setVisible(true);
             }
         });
 

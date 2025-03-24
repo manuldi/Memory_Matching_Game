@@ -24,7 +24,8 @@ public class SignupPage extends javax.swing.JFrame {
     
     // Password validation method
     private boolean isValidPassword(String password) {
-    return password.matches("^(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{6,}$");
+//    return password.matches("^(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{6,}$");
+        return password.matches("^[A-Za-z\\d]{4,}$");
     }
     
     // Validate email format
@@ -127,10 +128,10 @@ public class SignupPage extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("SansSerif", 0, 16)); // NOI18N
         jLabel5.setText("Already a member?");
 
-        LoginNavigate.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        LoginNavigate.setFont(new java.awt.Font("SansSerif", 0, 16)); // NOI18N
         LoginNavigate.setText("Login");
         LoginNavigate.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         LoginNavigate.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -216,7 +217,7 @@ public class SignupPage extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(140, 140, 140)
                         .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 78, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 63, Short.MAX_VALUE)
                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 297, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -347,7 +348,7 @@ public class SignupPage extends javax.swing.JFrame {
     
     // Validate password security
     if (!isValidPassword(password)) {
-        JOptionPane.showMessageDialog(this, "Password must be at least 6 characters long, including 1 uppercase letter, 1 number, and 1 special character.");
+        JOptionPane.showMessageDialog(this, "Password must be at least 4 characters long, including 1 number.");
         return;
     }
     
