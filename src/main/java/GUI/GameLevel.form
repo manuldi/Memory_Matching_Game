@@ -97,9 +97,14 @@
                               <Group type="102" attributes="0">
                                   <Component id="card16" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace pref="306" max="32767" attributes="0"/>
-                                  <Component id="jLabel1" min="-2" pref="70" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="txtPoints" min="-2" pref="83" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="jLabel1" min="-2" pref="70" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="txtPoints" min="-2" pref="83" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="txtTimer" alignment="1" min="-2" pref="138" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="card4" min="-2" max="-2" attributes="0"/>
@@ -121,7 +126,7 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-                  <Component id="Homebtn" max="32767" attributes="0"/>
+                  <Component id="Homebtn" pref="145" max="32767" attributes="0"/>
                   <EmptySpace min="-2" pref="517" max="-2" attributes="0"/>
                   <Component id="txtPoints" min="-2" pref="29" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
@@ -181,7 +186,9 @@
                                   </Group>
                               </Group>
                               <Group type="102" attributes="0">
-                                  <EmptySpace min="46" pref="421" max="32767" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="txtTimer" min="-2" pref="28" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jLabel1" min="-2" pref="62" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -846,6 +853,18 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="2" name="C:\Users\manul\OneDrive\Desktop\Y3S1\DSA\Assignment\star_3640184 (1).png"/>
             </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="txtTimer">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="SansSerif" size="18" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="a" green="4a" red="68" type="rgb"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="jLabel2"/>
           </Properties>
         </Component>
       </SubComponents>

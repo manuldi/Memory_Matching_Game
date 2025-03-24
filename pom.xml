@@ -58,4 +58,5 @@
         <maven.compiler.target>20</maven.compiler.target>
         <exec.mainClass>com.mycompany.gamedemo.GameDemo</exec.mainClass>
     </properties>
+    <name>Memory_Matching_Game</name>
 </project>

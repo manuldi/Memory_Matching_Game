@@ -12,6 +12,7 @@ import GUI.FinishDialog;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -45,6 +46,8 @@ public class GameLevel extends javax.swing.JFrame {
     private int matchedPairs = 0;
     private static int points = 0;
     private static int levels = 0;
+    private int timeLeft = 60;
+    private javax.swing.Timer gameTimer;
     /**
      * Creates new form GameLevel
      */
@@ -54,7 +57,7 @@ public class GameLevel extends javax.swing.JFrame {
         resetPoints();  // Reset points for the next level
         loadImagesFromJSON(currentLevel); // Load level 1 images initially
         setupGame();
-        
+        startTimer();
         
     }
     
@@ -192,7 +195,25 @@ public class GameLevel extends javax.swing.JFrame {
         
     }
     
-
+    private void startTimer() {
+        gameTimer = new javax.swing.Timer(1000, new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                timeLeft--;
+                txtTimer.setText("Time Left: " + timeLeft + "s");
+                if (timeLeft <= 0) {
+                    gameTimer.stop();
+                    gameOver();
+                }
+            }
+        });
+        gameTimer.start();
+    }
+    
+    private void gameOver() {
+        JOptionPane.showMessageDialog(this, "Time's up! Your score: " + points, "Game Over", JOptionPane.INFORMATION_MESSAGE);
+        this.dispose();
+    }
     
     public static void resetPoints() {
         points = 0; // Reset points each time a new level is started
@@ -272,6 +293,7 @@ public class GameLevel extends javax.swing.JFrame {
         txtPoints = new javax.swing.JLabel();
         Homebtn = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        txtTimer = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -670,6 +692,11 @@ public class GameLevel extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\manul\\OneDrive\\Desktop\\Y3S1\\DSA\\Assignment\\star_3640184 (1).png")); // NOI18N
 
+        txtTimer.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        txtTimer.setForeground(new java.awt.Color(104, 74, 10));
+        txtTimer.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txtTimer.setText("jLabel2");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -718,9 +745,12 @@ public class GameLevel extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(card16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 306, Short.MAX_VALUE)
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(txtPoints, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(txtPoints, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(txtTimer, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                                 .addComponent(card4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -734,7 +764,7 @@ public class GameLevel extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(9, 9, 9)
-                .addComponent(Homebtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(Homebtn, javax.swing.GroupLayout.DEFAULT_SIZE, 145, Short.MAX_VALUE)
                 .addGap(517, 517, 517)
                 .addComponent(txtPoints, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(64, 64, 64))
@@ -781,7 +811,9 @@ public class GameLevel extends javax.swing.JFrame {
                                     .addComponent(card14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(card15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(46, 421, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(txtTimer, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(50, 50, 50))))
         );
@@ -894,5 +926,6 @@ public class GameLevel extends javax.swing.JFrame {
     private javax.swing.JLabel txtMisses;
     private javax.swing.JLabel txtMoves;
     private javax.swing.JLabel txtPoints;
+    private javax.swing.JLabel txtTimer;
     // End of variables declaration//GEN-END:variables
 }
