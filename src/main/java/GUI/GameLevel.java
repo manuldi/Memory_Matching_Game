@@ -40,11 +40,11 @@ public class GameLevel extends javax.swing.JFrame {
     private JLabel firstLabel, secondLabel;
     private int firstIndex, secondIndex;
     private boolean isFlipping = false;
-    private int currentLevel = 0; // Default level
+    public static int currentLevel = 0; // Default level
     private int misses = 0;
     private int moves = 0;
     private int matchedPairs = 0;
-    private static int points = 0;
+    public static int points = 0;
     private static int levels = 0;
     private int timeLeft = 60;
     private javax.swing.Timer gameTimer;
@@ -167,6 +167,7 @@ public class GameLevel extends javax.swing.JFrame {
         
         if(points >= 80)
         {
+            gameTimer.stop();
             // Handle level complete logic
             if(UserAuth.sessionToken != null)
             {
@@ -211,7 +212,11 @@ public class GameLevel extends javax.swing.JFrame {
     }
     
     private void gameOver() {
-        JOptionPane.showMessageDialog(this, "Time's up! Your score: " + points, "Game Over", JOptionPane.INFORMATION_MESSAGE);
+//        JOptionPane.showMessageDialog(this, "Time's up! Your score: " + points, "Game Over", JOptionPane.INFORMATION_MESSAGE);
+        updateProfileAfterLevel();
+        GameOver over = new GameOver(this, true);
+        over.setLocationRelativeTo(this); // Center the dialog 
+        over.setVisible(true); // Show pop-up
         this.dispose();
     }
     
@@ -695,7 +700,7 @@ public class GameLevel extends javax.swing.JFrame {
         txtTimer.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
         txtTimer.setForeground(new java.awt.Color(104, 74, 10));
         txtTimer.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        txtTimer.setText("jLabel2");
+        txtTimer.setText("Time Left:   s");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
