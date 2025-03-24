@@ -864,7 +864,7 @@
               <Color blue="a" green="4a" red="68" type="rgb"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="jLabel2"/>
+            <Property name="text" type="java.lang.String" value="Time Left:   s"/>
           </Properties>
         </Component>
       </SubComponents>
