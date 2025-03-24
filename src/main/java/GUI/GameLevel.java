@@ -213,7 +213,7 @@ public class GameLevel extends javax.swing.JFrame {
     
     private void gameOver() {
 //        JOptionPane.showMessageDialog(this, "Time's up! Your score: " + points, "Game Over", JOptionPane.INFORMATION_MESSAGE);
-        updateProfileAfterLevel();
+//        updateProfileAfterLevel();
         GameOver over = new GameOver(this, true);
         over.setLocationRelativeTo(this); // Center the dialog 
         over.setVisible(true); // Show pop-up

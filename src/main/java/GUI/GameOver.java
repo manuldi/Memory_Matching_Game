@@ -21,7 +21,7 @@ public class GameOver extends javax.swing.JDialog {
     
     private boolean logoutButtonClicked = false; // Track if logout button was clicked
     
-    private static final String FILE_PATH = "C:\\Users\\manul\\OneDrive\\Desktop\\Y3S1\\DSA\\Assignment\\GameDemo\\src\\main\\java\\Code\\players.json"; // Adjust the file path
+    
 
     /**
      * Creates new form GameOver
@@ -41,7 +41,7 @@ public class GameOver extends javax.swing.JDialog {
         });
         dispose();
         
-        txtScore.setText("Game over!     Your Score: " + GameLevel.points);
+//        txtScore.setText("Game over!     Your Score: " + GameLevel.points);
         
         
     }
