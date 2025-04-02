@@ -253,6 +253,14 @@ public class ResetPassword extends javax.swing.JFrame {
 //            new ForgotPassword().setVisible(true);
             this.dispose(); // Close signup window
         }
+        else
+        {
+            JOptionPane.showMessageDialog(this, "Currently you don't have an account.\nSign up first!");
+            SignupPage signup = new SignupPage(); // Create an instance of HomePage
+            signup.setVisible(true); // Show Login page
+//            new ForgotPassword().setVisible(true);
+            this.dispose(); // Close signup window
+        }
         
     }//GEN-LAST:event_SubmitBtnMouseClicked
 

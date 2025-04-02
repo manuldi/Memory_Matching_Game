@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Code;
+import Code.GmailService;
 import GUI.LoginPage;
 import org.json.JSONArray; //JSON Processing API to reads and writes user data.
 import org.json.JSONObject; //JSON Processing API to reads and writes user data.
@@ -138,10 +139,15 @@ public class UserAuth {
         {
             String resetCode = generateResetCode();
                 try {
-                
-                        GmailService.sendEmail(email, "Memory Matching Game", "Thanks for joining us.We're glad to have you on board.\nYou're receiving this email because you have registered in our game.\n"
+                    // Send the reset code via email
+                        GmailService.sendEmail(email, "Memory Matching Game","Thanks for joining us.We're glad to have you on board."
+                                + "\nYou're receiving this email because you have registered in our game.\n"
                         + "\nThe verification code is only valid for the next 15 minutes.\n\n\n" 
                         + resetCode+ "\b\n\n\n"+"Thanks,\n" +"Admin.");
+                
+//                        GmailService.sendEmail(email, "Memory Matching Game", "Thanks for joining us.We're glad to have you on board.\nYou're receiving this email because you have registered in our game.\n"
+//                        + "\nThe verification code is only valid for the next 15 minutes.\n\n\n" 
+//                        + resetCode+ "\b\n\n\n"+"Thanks,\n" +"Admin.");
                         saveResetCode(email, resetCode);
                         return true;
                 }   catch (Exception e) 
@@ -233,7 +239,7 @@ public class UserAuth {
 
         try {
             // Send email with the new code
-            GmailService.sendEmail(email, "Password Reset Code (Resend)", "Your new reset code is: " + newResetCode);
+            GmailService.sendEmail(email, "Memory Matching Game - Password Reset Code (Resend)", "Your new reset code is: " + newResetCode);
 
             // Save the new reset code in the file
             saveResetCode(email, newResetCode);

@@ -146,6 +146,7 @@ GUI\SignupPage.class
 GUI\GameDialog.class
 GUI\SignupPage$4.class
 GUI\GameDialog$4.class
+Code\GmailService$1.class
 GUI\LeaderboardDialog$2.class
 GUI\FinishDialog$2.class
 GUI\GameOver2$5.class
