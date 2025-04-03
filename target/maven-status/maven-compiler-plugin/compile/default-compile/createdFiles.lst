@@ -38,7 +38,6 @@ GUI\GameDialog2.class
 GUI\GameDialog$2.class
 GUI\FinishDialog3$2.class
 GUI\GameDialog2$1.class
-GUI\levelTest$4.class
 GUI\GameOver$3.class
 GUI\GameDialog2$5$1.class
 GUI\CookiesDialog$5.class
@@ -53,7 +52,6 @@ GUI\LoginPage$7.class
 GUI\LeaderboardDialog$1.class
 GUI\GameDialog$5.class
 GUI\FinishDialog2$4.class
-GUI\levelTest$1.class
 GUI\LoginPage$4.class
 GUI\ForgotPassword$4.class
 GUI\GameDialog$1.class
@@ -73,7 +71,6 @@ GUI\ResetPassword$3.class
 GUI\GameOver$4.class
 GUI\GameLevel$2.class
 GUI\ForgotPassword$3.class
-GUI\levelTest$2.class
 GUI\GameOver2$2.class
 GUI\CookiesDialog$5$1.class
 GUI\SetPassword$1.class
@@ -86,7 +83,6 @@ GUI\ForgotPassword.class
 GUI\GameLevel$1.class
 GUI\ProfileDialog$1.class
 GUI\FinishDialog3$1.class
-GUI\levelTest$3.class
 GUI\FinishDialog.class
 GUI\GameDialog4.class
 GUI\FinishDialog3$7.class
@@ -124,7 +120,6 @@ GUI\GameOver2$4.class
 GUI\FinishDialog2$8$1.class
 GUI\FinishDialog4$7.class
 Code\DBManager.class
-GUI\levelTest.class
 GUI\GameOver2$1.class
 GUI\GameLevel2$1.class
 GUI\GameDialog4$1.class
@@ -152,7 +147,6 @@ GUI\FinishDialog$2.class
 GUI\GameOver2$5.class
 GUI\SetPassword$3.class
 GUI\BananaMathpuzzel.class
-GUI\levelTest$5.class
 GUI\FinishDialog3$3.class
 GUI\FinishDialog4$8.class
 GUI\LoginPage$8.class

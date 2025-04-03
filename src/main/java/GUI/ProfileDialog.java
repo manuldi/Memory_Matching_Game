@@ -9,7 +9,7 @@ import Code.DBManager;
 import Code.UserAuth;
 import static Code.UserAuth.sessionToken;
 import GUI.LoginPage;
-import GUI.levelTest;
+
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.IOException;
@@ -196,7 +196,7 @@ public class ProfileDialog extends javax.swing.JDialog {
             }
         });
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\manul\\OneDrive\\Desktop\\Y3S1\\DSA\\Assignment\\profile.png")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\manul\\OneDrive\\Desktop\\Y3S1\\DSA\\Assignment\\Images\\profile.png")); // NOI18N
         jLabel4.setText("jLabel4");
 
         txtName.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N

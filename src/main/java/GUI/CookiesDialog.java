@@ -141,7 +141,7 @@ public class CookiesDialog extends javax.swing.JDialog {
         });
 
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\manul\\OneDrive\\Desktop\\Y3S1\\DSA\\Assignment\\cookie_629587.png")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\manul\\OneDrive\\Desktop\\Y3S1\\DSA\\Assignment\\Images\\cookie_629587.png")); // NOI18N
 
         AcceptBtn.setBackground(new java.awt.Color(221, 157, 66));
         AcceptBtn.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
