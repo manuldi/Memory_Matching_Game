@@ -1,6 +1,6 @@
 # Memory Matching Game
 
-This is a **Memory Matching Game** developed in **Java** using **NetBeans**.It includes various features such as JSON-based data storage, user authentication, session management, API integration, and event-driven game mechanics.
+This is a **Memory Matching Game** developed in **Java** using **NetBeans**. It is a classic game where players try to find matching pairs of cards by flipping them over, relying on their memory to recall where the matches are located.And It includes various features such as JSON-based data storage, user authentication, session management, API integration, and event-driven game mechanics.
 
 ## Features
 - **Memory Matching Game Logic** - Flip cards, match pairs, and earn points.
