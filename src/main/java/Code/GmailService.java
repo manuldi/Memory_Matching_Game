@@ -29,8 +29,8 @@ import javax.mail.internet.*;
 
 public class GmailService {
     public static void sendEmail(String recipient, String code, String messageText) {
-        final String senderEmail = "manuldi2004@gmail.com"; // Replace with your Gmail
-        final String senderPassword = "ttsu vnas zukq xesk"; // Replace with your App Password
+        final String senderEmail = "manuldi2004@gmail.com"; 
+        final String senderPassword = "ttsu vnas zukq xesk"; 
         
         Properties properties = new Properties();
         properties.put("mail.smtp.auth", "true");
