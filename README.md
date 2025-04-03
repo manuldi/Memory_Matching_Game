@@ -31,6 +31,9 @@ This is a **Memory Matching Game** developed in **Java** using **NetBeans**. It 
      - `players.json` (stores player credentials and scores)
      - `game_images.json` (stores image paths for different levels)
      - `reset_codes.json` (stores temporary email verification codes)
+     
+- **Images Folder**: The game uses images stored in the `images/` folder. Ensure all images exist, or else the game will not display them properly.
+  - If images are missing, download and place them in `images/` before running the game.
 
 3. **Run the Game in NetBeans**
    - Open the project in **NetBeans**.
