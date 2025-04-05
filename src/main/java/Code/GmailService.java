@@ -25,7 +25,10 @@ import javax.mail.internet.*;
  *
  * @author manul
  */
-
+/*
+ * AI-generated suggestions were used for structuring the email handling.
+ * Additional modifications and testing were done manually.
+ */
 
 public class GmailService {
     public static void sendEmail(String recipient, String code, String messageText) {

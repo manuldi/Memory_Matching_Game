@@ -17,6 +17,11 @@ import org.json.JSONObject; //JSON API to used to parse the JSON response from t
  *
  * @author manul
  */
+
+/*
+ * AI-generated suggestions were used to get an idea about fetch the data from banana API.
+ * Additional modifications and testing were done manually.
+ */
 public class BananaAPI {
     
     private static final String API_URL = "https://marcconrad.com/uob/banana/api.php";

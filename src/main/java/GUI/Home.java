@@ -61,10 +61,10 @@ public class Home extends javax.swing.JFrame {
         jLabel1.setText("Memory");
 
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\manul\\OneDrive\\Desktop\\Y3S1\\DSA\\Assignment\\Images\\pngtree-cute-cat-comic-cute-animal-comic-small-animal-cartoon-decoration-png-image_2296892-removebg-preview.png")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\manul\\OneDrive\\Desktop\\Y3S1\\DSA\\Assignment\\GameDemo\\Images\\pngtree-cute-cat-comic-cute-animal-comic-small-animal-cartoon-decoration-png-image_2296892-removebg-preview.png")); // NOI18N
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\manul\\OneDrive\\Desktop\\Y3S1\\DSA\\Assignment\\Images\\50f97bce611b9709ef562fa46d743967-removebg-preview.png")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\manul\\OneDrive\\Desktop\\Y3S1\\DSA\\Assignment\\GameDemo\\Images\\50f97bce611b9709ef562fa46d743967-removebg-preview.png")); // NOI18N
 
         Level1Btn.setBackground(new java.awt.Color(226, 203, 152));
         Level1Btn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -231,7 +231,7 @@ public class Home extends javax.swing.JFrame {
         );
 
         Profile.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Profile.setIcon(new javax.swing.ImageIcon("C:\\Users\\manul\\OneDrive\\Desktop\\Y3S1\\DSA\\Assignment\\Images\\profile.png")); // NOI18N
+        Profile.setIcon(new javax.swing.ImageIcon("C:\\Users\\manul\\OneDrive\\Desktop\\Y3S1\\DSA\\Assignment\\GameDemo\\Images\\profile.png")); // NOI18N
         Profile.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ProfileMouseClicked(evt);
@@ -239,7 +239,7 @@ public class Home extends javax.swing.JFrame {
         });
 
         LeaderboardBtn.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LeaderboardBtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\manul\\OneDrive\\Desktop\\Y3S1\\DSA\\Assignment\\Images\\home.png")); // NOI18N
+        LeaderboardBtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\manul\\OneDrive\\Desktop\\Y3S1\\DSA\\Assignment\\GameDemo\\Images\\home.png")); // NOI18N
         LeaderboardBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 LeaderboardBtnMouseClicked(evt);

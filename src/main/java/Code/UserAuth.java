@@ -29,6 +29,10 @@ import java.util.Date; //Date API to Handles cookie expiration.
  * @author manul
  */
 
+/*
+ * AI-generated suggestions were used for structuring the hashing process and random salt method.
+ * Additional modifications and testing were done manually.
+ */
 
 public class UserAuth {
     private static final String FILE_PATH = "C:\\Users\\manul\\OneDrive\\Desktop\\Y3S1\\DSA\\Assignment\\GameDemo\\src\\main\\java\\Code\\players.json";

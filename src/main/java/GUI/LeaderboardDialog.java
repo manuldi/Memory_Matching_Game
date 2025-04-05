@@ -81,7 +81,7 @@ public class LeaderboardDialog extends javax.swing.JDialog {
 
         jPanel1.setBackground(new java.awt.Color(145, 115, 74));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\manul\\OneDrive\\Desktop\\Y3S1\\DSA\\Assignment\\Images\\promotion_18528162.png")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\manul\\OneDrive\\Desktop\\Y3S1\\DSA\\Assignment\\GameDemo\\Images\\promotion_18528162.png")); // NOI18N
         jLabel4.setText("jLabel4");
 
         txtName.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N

@@ -82,7 +82,7 @@
         <Component class="javax.swing.JLabel" name="jLabel4">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\manul\OneDrive\Desktop\Y3S1\DSA\Assignment\Images\promotion_18528162.png"/>
+              <Image iconType="2" name="C:\Users\manul\OneDrive\Desktop\Y3S1\DSA\Assignment\GameDemo\Images\promotion_18528162.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="jLabel4"/>
           </Properties>
