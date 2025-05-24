@@ -10,11 +10,7 @@ import org.json.JSONObject; //JSON Processing API to reads and writes user data.
 import java.io.*; //Java File I/O API to reads and writes session data in cookies.
 import java.nio.file.Files; //Java File I/O API to reads and writes session data in cookies.
 import java.nio.file.Paths;//Java File I/O API to reads and writes session data in cookies.
-//import java.rmi.Naming;
-//import java.rmi.RemoteException;
-//import java.rmi.server.RemoteServer;
-//import java.util.List;
-//import Code.LoginImplementation;
+
 import GUI.CookiesDialog;
 import java.security.MessageDigest; //Java Cryptography API to used for hashing and salting passwords.
 import java.security.SecureRandom; //Java Cryptography API to used for hashing and salting passwords.
@@ -124,7 +120,7 @@ public class UserAuth {
                 
                 if (storedHash.equals(hashedInputPassword)) { //Compares stored hashed password with input password (hashed with stored salt)
                     sessionToken = generateSalt(); //generates a sessionToken for authentication.
-//                    saveCookie(name);
+                    //saveCookie(name);
                     System.out.println("Login Successful.");
                     return true;
                 }
@@ -148,10 +144,7 @@ public class UserAuth {
                                 + "\nYou're receiving this email because you have registered in our game.\n"
                         + "\nThe verification code is only valid for the next 15 minutes.\n\n\n" 
                         + resetCode+ "\b\n\n\n"+"Thanks,\n" +"Admin.");
-                
-//                        GmailService.sendEmail(email, "Memory Matching Game", "Thanks for joining us.We're glad to have you on board.\nYou're receiving this email because you have registered in our game.\n"
-//                        + "\nThe verification code is only valid for the next 15 minutes.\n\n\n" 
-//                        + resetCode+ "\b\n\n\n"+"Thanks,\n" +"Admin.");
+             
                         saveResetCode(email, resetCode);
                         return true;
                 }   catch (Exception e) 
@@ -211,7 +204,7 @@ public class UserAuth {
         {
             JSONObject entry = resetCodes.getJSONObject(i);
             if (!entry.getString("email").equals(email)) {
-            updatedCodes.put(entry); // Keep only codes not related to the email
+                updatedCodes.put(entry); // Keep only codes not related to the email
             }
         }
 
@@ -309,6 +302,8 @@ public class UserAuth {
             
             if (cookies.length() == 0) return false;
             JSONObject cookie = cookies.getJSONObject(0);
+            
+            //AI-generated suggestions were used for handling cookie expiration
             
             String expiryDateStr = cookie.getString("expiry");
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");

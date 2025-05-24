@@ -8,19 +8,15 @@ package Code;
 
 import javax.mail.*; //JavaMail API for handling email content.
 import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeMessage;
-import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.security.GeneralSecurityException;
-import java.util.Collections;
-import java.util.List;
-import java.util.Properties;
-import java.util.Base64; //Encodes email content before sending.
+import javax.mail.internet.MimeMessage; //Represents the email message to be sent. (content)
+import java.io.*; //handle I/O operations to/from files
+import java.nio.file.Files; //handle I/O operations to/from files
+import java.nio.file.Paths;//handle file paths
+
 
 import java.util.Properties;
-import javax.mail.*;
-import javax.mail.internet.*;
+import javax.mail.*; //provides classes to send, receive, and manage emails via SMTP
+import javax.mail.internet.*; //represents an email address. "from" & "to" email addresses
 /**
  *
  * @author manul
@@ -31,17 +27,17 @@ import javax.mail.internet.*;
  */
 
 public class GmailService {
-    public static void sendEmail(String recipient, String code, String messageText) {
+    public static void sendEmail(String recipient, String subject, String messageText) {
         final String senderEmail = "manuldi2004@gmail.com"; 
         final String senderPassword = "ttsu vnas zukq xesk"; 
         
         Properties properties = new Properties();
-        properties.put("mail.smtp.auth", "true");
-        properties.put("mail.smtp.starttls.enable", "true");
-        properties.put("mail.smtp.host", "smtp.gmail.com");
-        properties.put("mail.smtp.port", "587");
+        properties.put("mail.smtp.auth", "true"); //Sets an SMTP property, enabling authentication for sending emails.
+        properties.put("mail.smtp.starttls.enable", "true"); //ensures secure communication by upgrading the connection to TLS (Transport Layer Security)
+        properties.put("mail.smtp.host", "smtp.gmail.com"); //Specifies the SMTP server (Gmail's SMTP server) to use for sending emails.
+        properties.put("mail.smtp.port", "587"); //Specifies the port number (587) for sending emails via SMTP with encryption (STARTTLS).
 
-        Session session = Session.getInstance(properties, new Authenticator() {
+        Session session = Session.getInstance(properties, new Authenticator() { //handle authentication.
             protected PasswordAuthentication getPasswordAuthentication() {
                 return new PasswordAuthentication(senderEmail, senderPassword);
             }
@@ -51,7 +47,7 @@ public class GmailService {
             MimeMessage message = new MimeMessage(session);
             message.setFrom(new InternetAddress(senderEmail));
             message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(recipient));
-            message.setSubject(code);
+            message.setSubject(subject);
 //            message.setText("Your verification code is: " + code);
             message.setText(messageText);
 
